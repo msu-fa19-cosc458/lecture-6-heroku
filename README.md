@@ -11,4 +11,6 @@ Procfile is a file used to tell heroku what command to run your app from their t
 For more information on Procfile, read the doc by heroku [here](https://devcenter.heroku.com/articles/procfile)
 
 ## requirements.txt
-Requirements file tells Heroku's servers what external libraries need to be installed. Personally, I just throw in all the names of the libraries I imported via my python files on AWS... because I'm too lazy to figure out what version of linux Heroku runs and what python libraries are already pre-installed.
+Requirements file tells Heroku's servers what external libraries need to be installed on their end. If you look at the logs while pushing your local repo to heroku, you will notice they run 'pip install <name_of_library>', just like we did in AWS!
+
+Personally, I just throw in all the names of the libraries I imported via my python files on AWS... mostly because I'm too lazy to figure out what version of linux Heroku runs and what python libraries are already pre-installed.
