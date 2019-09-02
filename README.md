@@ -13,4 +13,6 @@ For more information on Procfile, read the doc by heroku [here](https://devcente
 ## requirements.txt
 Requirements file tells Heroku's servers what external libraries need to be installed on their end. If you look at the logs while pushing your local repo to heroku, you will notice they run 'pip install <name_of_library>', just like we did in AWS!
 
-Personally, I just throw in all the names of the libraries I imported via my python files on AWS... mostly because I'm too lazy to figure out what version of linux Heroku runs and what python libraries are already pre-installed.
+Personally, I just throw in all the names of the libraries I imported via my python files on AWS into requirements.txt... mostly because I'm too lazy to figure out what version of linux Heroku runs and what python libraries are already pre-installed.
+
+Nonetheless, if you forget to throw in a library via requirements.txt, the logs spit out from Heroku will tell you that a module has not been installed.
